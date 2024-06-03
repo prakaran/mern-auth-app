@@ -1,0 +1,17 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "MERN Auth App",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
+  },
+  "author": "Karan Bhatt",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.2"
+  }
+}
