@@ -3,12 +3,16 @@ import dotenv from "dotenv";
 dotenv.config();
 import connectDB from "../db/connect.js";
 import userRouter from "../routes/user.route.js";
+import authRouter from "../routes/auth.route.js";
+
 
 const app = express();
-
 const port = 3000;
 
-app.use('/api/user', userRouter);
+app.use(express.json());
+app.use('/api/v1/user', userRouter);
+app.use('/api/v1/user', authRouter);
+
 
 const start = async()=>{
     try {
