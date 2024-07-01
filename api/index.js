@@ -11,7 +11,7 @@ const port = 3000;
 
 app.use(express.json());
 app.use('/api/v1/user', userRouter);
-app.use('/api/v1/user', authRouter);
+app.use('/api/v1/auth', authRouter);
 
 app.use((error, req, res, next)=>{
     const statusCode = error.statusCode || 500;
